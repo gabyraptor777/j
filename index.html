@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> лайка</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="shortcut icon" href="./img/a.png">
+
+    <style>
+        body {
+            background-color: rgb(0, 0, 0);
+        }
+
+        .laika-home {
+            width: 100%;
+        }
+
+        .scroll-horizontal {
+            display: inline-flex;
+            flex-direction: row;
+            overflow: auto;
+        }
+
+        .larguero {
+            width: 450%;
+        }
+
+        ::-webkit-scrollbar {
+            width: 20px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px rgb(39, 35, 35);
+            border-radius: 10px;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: red;
+            border-radius: 10px;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #b30000;
+        }
+
+        #fuego {
+            display: none;
+            position: absolute;
+            padding: 5%;
+            width: 90%;
+        }
+
+        .heroes {
+            width: 300%;
+        }
+
+        #cohete {
+            width: 100%;
+        }
+
+        img {
+            border: 0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .doguis {
+            width: 300%;
+        }
+    </style>
+</head>
+
+<body>
+    <img class="laika-home" src="./img/gifintro.gif" alt="">
+    <img class="laika-home" src="img/2da.png" alt="">
+
+    <div class="laika-home scroll-horizontal">
+        <img id="fuego" src="./img/fuego.png" alt="">
+        <img class="larguero" src="./img/3era.jpg" alt="">
+    </div>
+
+    <img class="laika-home" src="/img/4ta.png" alt="">
+    <img class="laika-home" src="/img/5ta.png" alt="">
+
+    <div class="laika-home scroll-horizontal">
+         <img class="doguis" src="./img/gifanimales.gif" alt="">
+    </div>
+
+    <img class="laika-home" src="/img/7ma.png" alt="">
+    <img class="laika-home" src="/img/8va.png" alt="">
+
+    <a
+        href="https://www.google.com/maps/@55.7945648,37.5589662,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipPSzg35fO33M0RtNgjAtov0IFXC74LAwc1Ov3Su!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipPSzg35fO33M0RtNgjAtov0IFXC74LAwc1Ov3Su%3Dw114-h86-k-no!7i4032!8i3024?hl=es&shorturl=1">
+        <img class="laika-home" src="./img/derechos.png" alt="">
+    </a>
+
+    <script>
+        $(document).ready(function () {
+            $('.larguero').click(function () {
+                $(this).parent().find("#fuego").fadeToggle();
+            });
+            $('#fuego').click(function () {
+                $(this).parent().find("#fuego").fadeToggle();
+            });
+        });
+    </script>
+
+</body>
+</html>
